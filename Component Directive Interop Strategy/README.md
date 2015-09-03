@@ -2,7 +2,7 @@
 
 One basic strategy of migration is to make it easy to bootstrap Angular 2 components inside AngularJS 1 application (and also AngularJS 1 components inside Angular 2 application). This means that an AngularJS 1 application can be migrated to Angular 2 application piecemeal over many commits one component at a time.
 
-It is important to understand that at any given time any one  DOM element can be owned by only one framework at a time. For this reason it is not possible to mix directives between Angular JS 1 and Angular 2. (Example: <ng2-comp ng1-click="exp">) Further more the expression evaluation semantics are slightly different between the two frameworks which further prevents mixing on per element basis.
+It is important to understand that at any given time any one  DOM element can be owned by only one framework at a time. For this reason it is not possible to mix directives between Angular JS 1 and Angular 2. (Example: `<ng2-comp ng1-click="exp">`) Further more the expression evaluation semantics are slightly different between the two frameworks which further prevents mixing on per element basis.
 
 Components provide a natural boundary for mixing AngularJS 1 and Angular 2. Each component has an associated template which can be then be compiled be either Angular JS 1 or Angular 2. Within each component template particular semantics apply and is fully managed by the appropriate framework version.
 
